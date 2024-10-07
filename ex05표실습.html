@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <!--
+        표를 만들기 위한 태그
+        1) 전체 영역을 담당하는 <table>
+        2) 행(줄) 담당하는 <tr>
+        3) 첫번째 행에 칸을 쪼갤때(컬럼,제목) <th>
+        4) 나머지 행에 칸을 쪼갤때(데이터) <td>
+        5) 셀 병합 가로병합(colspan 속성) / 세로병합 (rowspan 속성)
+
+        표만드는 순서
+        1) table태그로 틀작성
+        2) 필요한 줄 수 만큼 tr태그 생성
+        3) 각각의 줄을 칸으로 쪼개기 
+            - 컬럼의 이름은 th 태그
+            - 데이터는 td 태그
+        * 셀병합 colspan, rowspan
+        * 글자를 정렬 -> align
+        * 배경색은 bgcolor 
+        * 두껍게 만드는거 태그 -> storng
+    --> 
+        <table border="1px solid black">
+            <tr align="center">
+                <th rowspan="2">연도</th>
+                <th colspan="2">순위</th>
+            </tr>
+
+            <tr align="center">
+                <th>종합</th>
+                <th>정규</th>
+            </tr>
+
+            <tr align="center">
+                <td>1982</td>
+                <td>
+                   <b>4</b>
+                </td>
+                <td>4</td>
+            </tr>
+
+            <tr align="center" bgcolor = 'yellow'>
+                <td>1983</td>
+                <td>
+                    <b>1</b>
+                </td>
+                <td>2<br>(전기리그 1위)</td>
+            </tr>
+
+            <tr align="center">
+                <td>1984</td>
+                <td>
+                    <b>5</b>
+                </td>
+                <td>5</td>
+            </tr>
+
+            <tr align="center" >
+                <td>1985</td>
+                <td>
+                    <b>3</b>
+                </td>
+                <td>3</td>
+            </tr>
+        </table>
+
+    
+</body>
+</html>
