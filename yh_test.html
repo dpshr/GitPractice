@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: red;
+            height: 500px;
+            /* (1)flex설정
+            요소들이 가로로 자동 정렬 */
+            display: flex;
+            /* (2)배치방향설정 
+            2-1) row
+            -메인축 : 가로로 정렬
+            -서브축 : 세로로 정렬
+            2-2) colomn
+            -메인축 : 세로로 정렬
+            -서브축 : 가로로정렬*/
+            flex-direction: row;
+
+            /* (3) 메인축으로 정렬 */
+            justify-content: center;
+
+            /* (4) 서브축정렬 */
+            align-items: center;
+        }
+
+        .item{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            flex-basis: 15%;
+            border: solid 2px black;
+        }
+
+        #center{
+            flex-basis: 70%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class = 'container'>
+        <div class = 'item'></div>
+        <div class = 'item' id = 'center'></div>
+        <div class = 'item'></div>
+    </div>
+    
+</body>
+</html>
